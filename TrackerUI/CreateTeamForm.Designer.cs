@@ -46,6 +46,8 @@ namespace TrackerUI
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.PlayerlistBox = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -101,7 +103,7 @@ namespace TrackerUI
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(241, 214);
+            this.textBox6.Location = new System.Drawing.Point(146, 42);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(244, 31);
             this.textBox6.TabIndex = 20;
@@ -109,7 +111,7 @@ namespace TrackerUI
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(106, 220);
+            this.label8.Location = new System.Drawing.Point(11, 48);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 25);
             this.label8.TabIndex = 19;
@@ -117,7 +119,7 @@ namespace TrackerUI
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(241, 262);
+            this.textBox2.Location = new System.Drawing.Point(146, 90);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(244, 31);
             this.textBox2.TabIndex = 22;
@@ -125,7 +127,7 @@ namespace TrackerUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(106, 268);
+            this.label3.Location = new System.Drawing.Point(11, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 25);
             this.label3.TabIndex = 21;
@@ -133,7 +135,7 @@ namespace TrackerUI
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(241, 312);
+            this.textBox3.Location = new System.Drawing.Point(146, 140);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(244, 31);
             this.textBox3.TabIndex = 24;
@@ -141,7 +143,7 @@ namespace TrackerUI
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(106, 318);
+            this.label5.Location = new System.Drawing.Point(11, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 25);
             this.label5.TabIndex = 23;
@@ -149,7 +151,7 @@ namespace TrackerUI
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(241, 362);
+            this.textBox4.Location = new System.Drawing.Point(146, 190);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(244, 31);
             this.textBox4.TabIndex = 26;
@@ -157,7 +159,7 @@ namespace TrackerUI
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(106, 368);
+            this.label6.Location = new System.Drawing.Point(11, 196);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 25);
             this.label6.TabIndex = 25;
@@ -165,7 +167,7 @@ namespace TrackerUI
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(447, 457);
+            this.button3.Location = new System.Drawing.Point(621, 425);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(213, 55);
             this.button3.TabIndex = 27;
@@ -174,7 +176,7 @@ namespace TrackerUI
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(211, 411);
+            this.button2.Location = new System.Drawing.Point(116, 230);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(144, 44);
             this.button2.TabIndex = 28;
@@ -185,27 +187,37 @@ namespace TrackerUI
             // 
             this.PlayerlistBox.FormattingEnabled = true;
             this.PlayerlistBox.ItemHeight = 25;
-            this.PlayerlistBox.Location = new System.Drawing.Point(625, 44);
+            this.PlayerlistBox.Location = new System.Drawing.Point(621, 15);
             this.PlayerlistBox.Name = "PlayerlistBox";
             this.PlayerlistBox.Size = new System.Drawing.Size(293, 379);
             this.PlayerlistBox.TabIndex = 29;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Location = new System.Drawing.Point(100, 206);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(441, 281);
+            this.groupBox1.TabIndex = 30;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Add New Member";
             // 
             // CreateTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 524);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.PlayerlistBox);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
@@ -214,6 +226,8 @@ namespace TrackerUI
             this.Controls.Add(this.label1);
             this.Name = "CreateTeamForm";
             this.Text = "CreateTeamForm";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +252,6 @@ namespace TrackerUI
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListBox PlayerlistBox;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
