@@ -55,9 +55,9 @@ namespace TrackerUI
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(100, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 25);
+            this.label1.Size = new System.Drawing.Size(108, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Create Tournament";
+            this.label1.Text = "Create Team";
             // 
             // textBox1
             // 
@@ -94,11 +94,11 @@ namespace TrackerUI
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(211, 157);
+            this.button1.Location = new System.Drawing.Point(241, 157);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 43);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Add Item";
+            this.button1.Text = "Add Member";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox6
@@ -176,7 +176,7 @@ namespace TrackerUI
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(116, 230);
+            this.button2.Location = new System.Drawing.Point(141, 231);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(144, 44);
             this.button2.TabIndex = 28;

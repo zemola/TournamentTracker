@@ -4,8 +4,9 @@ using System.Text;
 
 namespace TrackerLibrary
 {
-    class PrizeModel
+   public class PrizeModel
     {
+        public int Id { get; set; }
         public int PlaceNumber { get; set; }
         public string PlaceName { get; set; }
         public decimal PrizeAmount  { get; set; }

@@ -36,13 +36,13 @@ namespace TrackerUI
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.TeamOneName = new System.Windows.Forms.Label();
             this.TeamTwoName = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.team1textboxlabel = new System.Windows.Forms.Label();
+            this.team1textBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.scoreBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,22 +111,22 @@ namespace TrackerUI
             this.TeamTwoName.Text = "<team 2 name>";
             this.TeamTwoName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label4
+            // team1textboxlabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(307, 146);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Score";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.team1textboxlabel.AutoSize = true;
+            this.team1textboxlabel.Location = new System.Drawing.Point(307, 146);
+            this.team1textboxlabel.Name = "team1textboxlabel";
+            this.team1textboxlabel.Size = new System.Drawing.Size(56, 25);
+            this.team1textboxlabel.TabIndex = 8;
+            this.team1textboxlabel.Text = "Score";
+            this.team1textboxlabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // team1textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(369, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 31);
-            this.textBox1.TabIndex = 9;
+            this.team1textBox.Location = new System.Drawing.Point(369, 140);
+            this.team1textBox.Name = "team1textBox";
+            this.team1textBox.Size = new System.Drawing.Size(189, 31);
+            this.team1textBox.TabIndex = 9;
             // 
             // textBox2
             // 
@@ -165,29 +165,29 @@ namespace TrackerUI
             this.label5.Text = "VS";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // scoreBtn
             // 
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(520, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Score";
-            this.button1.UseVisualStyleBackColor = true;
+            this.scoreBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.scoreBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.scoreBtn.Location = new System.Drawing.Point(520, 231);
+            this.scoreBtn.Name = "scoreBtn";
+            this.scoreBtn.Size = new System.Drawing.Size(112, 34);
+            this.scoreBtn.TabIndex = 14;
+            this.scoreBtn.Text = "Score";
+            this.scoreBtn.UseVisualStyleBackColor = true;
             // 
             // TournamentViwerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.scoreBtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.team1textBox);
+            this.Controls.Add(this.team1textboxlabel);
             this.Controls.Add(this.TeamTwoName);
             this.Controls.Add(this.TeamOneName);
             this.Controls.Add(this.checkBox1);
@@ -211,13 +211,13 @@ namespace TrackerUI
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label TeamOneName;
         private System.Windows.Forms.Label TeamTwoName;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label team1textboxlabel;
+        private System.Windows.Forms.TextBox team1textBox;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button scoreBtn;
     }
 }
 
