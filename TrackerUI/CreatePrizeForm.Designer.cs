@@ -50,6 +50,7 @@ namespace TrackerUI
             this.CreatePrizeBtn.TabIndex = 16;
             this.CreatePrizeBtn.Text = "Create Prize";
             this.CreatePrizeBtn.UseVisualStyleBackColor = true;
+            this.CreatePrizeBtn.Click += new System.EventHandler(this.CreatePrizeBtn_Click);
             // 
             // label4
             // 

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using TrackerLibrary;
 
 namespace TrackerUI
 {
@@ -53,6 +54,23 @@ namespace TrackerUI
         private void placeNumberValue_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CreatePrizeBtn_Click(object sender, EventArgs e)
+        {
+            if (ValidateForm())
+            {
+                PrizeModel model= new PrizeModel();
+                 model.PlaceName = placeNameValue.Text;
+                model.PlaceNumber = int.Parse(placeNumberValue.Text);
+                model.PrizeAmount = int.Parse(prizeAmountValue.Text);
+                model.Percentage = int.Parse(PrizePercentageValue.Text);
+
+                foreach (IDataConnection db in GlobalConfig.Connections)
+                {
+                    db.CreatePrize(model);
+                }
+            }
         }
     }
 }
