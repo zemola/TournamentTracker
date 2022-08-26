@@ -153,7 +153,7 @@ namespace TrackerUI
             this.Controls.Add(this.label1);
             this.Name = "CreatePrizeForm";
             this.Text = "CreatePrizeForm";
-            this.Load += new System.EventHandler(this.CreatePrizeForm_Load);
+            this.Load += new System.EventHandler(this.CreatePrizeForm_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

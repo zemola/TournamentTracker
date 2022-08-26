@@ -30,63 +30,65 @@ namespace TrackerUI
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.teamNameText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.selectTeamMembers = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.FirstName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.LastName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PhoneNumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.PlayerlistBox = new System.Windows.Forms.ListBox();
+            this.SelectedTeamMemberList = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 15);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(212, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 25);
+            this.label1.Size = new System.Drawing.Size(204, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Create Team";
             // 
-            // textBox1
+            // teamNameText
             // 
-            this.textBox1.Location = new System.Drawing.Point(241, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 31);
-            this.textBox1.TabIndex = 4;
+            this.teamNameText.Location = new System.Drawing.Point(356, 131);
+            this.teamNameText.Name = "teamNameText";
+            this.teamNameText.Size = new System.Drawing.Size(244, 31);
+            this.teamNameText.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(106, 55);
+            this.label2.Location = new System.Drawing.Point(221, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Team Name";
             // 
-            // comboBox1
+            // selectTeamMembers
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(241, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(244, 33);
-            this.comboBox1.TabIndex = 9;
+            this.selectTeamMembers.FormattingEnabled = true;
+            this.selectTeamMembers.Location = new System.Drawing.Point(356, 187);
+            this.selectTeamMembers.Name = "selectTeamMembers";
+            this.selectTeamMembers.Size = new System.Drawing.Size(244, 33);
+            this.selectTeamMembers.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(106, 113);
+            this.label4.Location = new System.Drawing.Point(221, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 25);
             this.label4.TabIndex = 8;
@@ -94,19 +96,20 @@ namespace TrackerUI
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 157);
+            this.button1.Location = new System.Drawing.Point(356, 243);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 43);
+            this.button1.Size = new System.Drawing.Size(213, 55);
             this.button1.TabIndex = 10;
             this.button1.Text = "Add Member";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.addMember_Click);
             // 
-            // textBox6
+            // FirstName
             // 
-            this.textBox6.Location = new System.Drawing.Point(146, 42);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(244, 31);
-            this.textBox6.TabIndex = 20;
+            this.FirstName.Location = new System.Drawing.Point(146, 42);
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Size = new System.Drawing.Size(244, 31);
+            this.FirstName.TabIndex = 20;
             // 
             // label8
             // 
@@ -117,12 +120,12 @@ namespace TrackerUI
             this.label8.TabIndex = 19;
             this.label8.Text = "First Name";
             // 
-            // textBox2
+            // LastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 31);
-            this.textBox2.TabIndex = 22;
+            this.LastName.Location = new System.Drawing.Point(146, 90);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(244, 31);
+            this.LastName.TabIndex = 22;
             // 
             // label3
             // 
@@ -133,12 +136,12 @@ namespace TrackerUI
             this.label3.TabIndex = 21;
             this.label3.Text = "Last Name";
             // 
-            // textBox3
+            // Email
             // 
-            this.textBox3.Location = new System.Drawing.Point(146, 140);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(244, 31);
-            this.textBox3.TabIndex = 24;
+            this.Email.Location = new System.Drawing.Point(146, 140);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(244, 31);
+            this.Email.TabIndex = 24;
             // 
             // label5
             // 
@@ -149,12 +152,12 @@ namespace TrackerUI
             this.label5.TabIndex = 23;
             this.label5.Text = "Email";
             // 
-            // textBox4
+            // PhoneNumber
             // 
-            this.textBox4.Location = new System.Drawing.Point(146, 190);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(244, 31);
-            this.textBox4.TabIndex = 26;
+            this.PhoneNumber.Location = new System.Drawing.Point(146, 190);
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.Size = new System.Drawing.Size(244, 31);
+            this.PhoneNumber.TabIndex = 26;
             // 
             // label6
             // 
@@ -167,65 +170,81 @@ namespace TrackerUI
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(621, 425);
+            this.button3.Location = new System.Drawing.Point(503, 657);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(213, 55);
+            this.button3.Size = new System.Drawing.Size(423, 55);
             this.button3.TabIndex = 27;
             this.button3.Text = "Create Team";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.CreateTeam_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(141, 231);
+            this.button2.Location = new System.Drawing.Point(146, 242);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 44);
+            this.button2.Size = new System.Drawing.Size(213, 55);
             this.button2.TabIndex = 28;
             this.button2.Text = "Create Member";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.CreateMember_Click);
             // 
-            // PlayerlistBox
+            // SelectedTeamMemberList
             // 
-            this.PlayerlistBox.FormattingEnabled = true;
-            this.PlayerlistBox.ItemHeight = 25;
-            this.PlayerlistBox.Location = new System.Drawing.Point(621, 15);
-            this.PlayerlistBox.Name = "PlayerlistBox";
-            this.PlayerlistBox.Size = new System.Drawing.Size(293, 379);
-            this.PlayerlistBox.TabIndex = 29;
+            this.SelectedTeamMemberList.FormattingEnabled = true;
+            this.SelectedTeamMemberList.ItemHeight = 25;
+            this.SelectedTeamMemberList.Location = new System.Drawing.Point(778, 121);
+            this.SelectedTeamMemberList.Name = "SelectedTeamMemberList";
+            this.SelectedTeamMemberList.Size = new System.Drawing.Size(293, 379);
+            this.SelectedTeamMemberList.TabIndex = 29;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.Email);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.FirstName);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.PhoneNumber);
+            this.groupBox1.Controls.Add(this.LastName);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(100, 206);
+            this.groupBox1.Location = new System.Drawing.Point(210, 304);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(441, 281);
+            this.groupBox1.Size = new System.Drawing.Size(441, 315);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add New Member";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(778, 546);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(213, 55);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "Remove Selected";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.removeSelected_Click);
             // 
             // CreateTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 524);
+            this.ClientSize = new System.Drawing.Size(1301, 735);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.PlayerlistBox);
+            this.Controls.Add(this.SelectedTeamMemberList);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.selectTeamMembers);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.teamNameText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "CreateTeamForm";
             this.Text = "CreateTeamForm";
+            this.Load += new System.EventHandler(this.CreateTeamForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -236,22 +255,23 @@ namespace TrackerUI
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox teamNameText;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox selectTeamMembers;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox FirstName;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox LastName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Email;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PhoneNumber;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox PlayerlistBox;
+        private System.Windows.Forms.ListBox SelectedTeamMemberList;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button4;
     }
 }

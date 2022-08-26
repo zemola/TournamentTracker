@@ -29,23 +29,43 @@ namespace TrackerUI
             if(!placeNumberValidNumber)
             {
                 output = false;
+                MessageBox.Show("placeNumber is invalid");
             }
             if(placeNumber<1)
             {
                 output = false;
+                MessageBox.Show("placeNumber should be greater than 1");
             }
 
             if (placeNameValue.Text.Length == 0)
             {
                 output = false;
+                MessageBox.Show("placeNamevalue should be greater than 1");
             }
 
-                
+            decimal prizeAmount = 0;
+            int prizePercentage = 0;
 
-            if (true)
+            bool prizeAmountValid = decimal.TryParse(prizeAmountValue.Text, out prizeAmount);
+            bool prizePercentageValid = int.TryParse(PrizePercentageValue.Text, out prizePercentage);
+
+            if (prizeAmountValid == false || prizePercentageValid == false)
+            {
+                MessageBox.Show("fill in the amount");
+                output = false;
+            }
+
+            if (prizeAmount <= 0 && prizePercentage <= 0)
+            {
+                MessageBox.Show("your amount shouldnt be less than 0");
+                output =false;
+            }
+
+            if (prizePercentage < 0 || prizePercentage > 100)
             {
                 output = false;
             }
+            output = true;
             return output;
         }
 
@@ -63,14 +83,27 @@ namespace TrackerUI
                 PrizeModel model= new PrizeModel();
                  model.PlaceName = placeNameValue.Text;
                 model.PlaceNumber = int.Parse(placeNumberValue.Text);
-                model.PrizeAmount = int.Parse(prizeAmountValue.Text);
-                model.Percentage = int.Parse(PrizePercentageValue.Text);
+                model.PrizeAmount = decimal.Parse(prizeAmountValue.Text);
+                model.Percentage = float.Parse(PrizePercentageValue.Text);
+                    
+               GlobalConfig.Connection.CreatePrize(model);
+    
 
-                foreach (IDataConnection db in GlobalConfig.Connections)
-                {
-                    db.CreatePrize(model);
-                }
+                MessageBox.Show("You have successfuly created a prize");
+                placeNameValue.Text = "";
+                placeNumberValue.Text = "";
+                prizeAmountValue.Text = "0";
+                PrizePercentageValue.Text = "0";
             }
+            else
+            {
+                MessageBox.Show("This form has invalid information. please check it and try again");
+            }
+        }
+
+        private void CreatePrizeForm_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

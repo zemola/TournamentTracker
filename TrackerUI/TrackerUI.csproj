@@ -2,16 +2,22 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="FluentValidation" Version="11.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TrackerLibrary\TrackerLibrary.csproj" />
+<<<<<<< Updated upstream
+    <ProjectReference Include="..\TrackerLibraries\TrackerLibraries.csproj" />
+=======
+    <ProjectReference Include="..\WindowsFormsApp1\TrackerLibrary.csproj" />
+>>>>>>> Stashed changes
   </ItemGroup>
 
 </Project>

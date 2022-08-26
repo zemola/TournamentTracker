@@ -29,10 +29,5 @@ namespace TrackerLibrary
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
-
-/*        public static string CnnString(string name)
-        {
-            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
-        }*/
     }
 }
